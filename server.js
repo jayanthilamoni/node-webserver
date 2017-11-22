@@ -37,6 +37,12 @@ app.get('/about',(request, response) => {
   });
 });
 
+app.get('/project',(req, res) => {
+  res.render('projects.hbs',{
+    url:'https://github.com/jayanthilamoni/node-webserver';
+  })
+});
+
 app.get('/bad',(req, res) => {
   res.send({
     status: 400,
